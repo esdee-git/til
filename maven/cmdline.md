@@ -1,14 +1,18 @@
 couple of useful maven commands
 
 * most often
-  *  mvn clean compile install
-
+```bash
+mvn clean compile install
+```
 * to execute a jar
-  *  mvn exec:java -Dexec.mainClass=de.tudarmstadt.ukp.dkpro.examples.stanfordcorecomponents.StanfordCoreComponents
-
+```bash
+mvn exec:java -Dexec.mainClass=de.tudarmstadt.ukp.dkpro.examples.stanfordcorecomponents.StanfordCoreComponents
+```
 * to kindly ask maven to generate the CLASSPATH it uses
-  *  mvn dependency:build-classpath -Dmdep.outputFile=classpath.txt
-
+```bash
+mvn dependency:build-classpath -Dmdep.outputFile=classpath.txt
+```
 * run specific tests from test class
-  *  mvn -Dtest=NumberTextFilterTests#testEng* test 
-
+```bash
+mvn -Dtest=NumberTextFilterTests#testEng* test 
+```
